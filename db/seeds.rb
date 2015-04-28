@@ -6,16 +6,13 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-
-
-
-
-
-
-Book.create(title:'The Hobbit', author:'Tolkien', pages:384, price:22.68)
-Book.create(title:'Atlas Shrugged', author:'Ayn Rand', pages:1200, price: 18.81)
-Book.create(title:"Ender's Game", author:'Orson Scott Card', pages:352, price:4.83)
-Book.create(title:'Hamlet', author:'Shakespeare', pages:342, price:5.34)
-
-
-
+Wine.create(name:'Dow\'s Vintage Porto', year:2011, winery:'Douro\'s Symington Family', country:'Portugal', varietal:'Port')
+Wine.create(name:'Carnival of Love', year:2012, winery:'Mollydooker', country:'Australia', varietal:'Shiraz')
+Wine.create(name:'Chryseia', year:2011, winery:'Prats & Symington', country:'Portugal', varietal:'Touriga Nacional & Touriga Franca')
+Wine.create(name:'Douro', year:2011, winery:'Quinta Do Vale Meão', country:'Portugal', varietal:'Touriga Nacional, Touriga Franca, Tinta Barroca, & Tinta Roriz')
+Wine.create(name:'Chardonnay Margaret River Art Series', year:2011, winery:'Leeuwin', country:'Australia', varietal:'Chardonnay')
+Wine.create(name:'Chianti Classico San Lorenzo Gran Selezione', year:2010, winery:'Castello di Ama', country:'Italy', varietal:'Chianti')
+Wine.create(name:'Châteauneuf-du-Pape', year:2012, winery:'Clos des Papes', country:'France', varietal:'Grenache, Mourvèdre, & Syrah')
+Wine.create(name:'Pinot Noir Sta. Rita Hills', year:2012, winery:'Brewer-Clifton', country:'United States', varietal:'Pinot Noir')
+Wine.create(name:'Cabernet Sauvignon Puente Alto Don Melchor', year:2010, winery:'Concha y Toro', country:'Chile', varietal:'Cabernet Sauvignon')
+Wine.create(name:'St.-Julien', year:2011, winery:'Château Léoville Las Cases', country:'France', varietal:'Cabernet Sauvignon, Merlot, & Cabernet Franc')
