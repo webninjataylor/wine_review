@@ -8,7 +8,7 @@
       <th>Name</th>
       <th>Winery</th>
       <th>Varietal</th>
-      <th></th>
+      <th colspan="3">Actions</th>
     </tr>
   </thead>
 
@@ -18,8 +18,12 @@
         <td><%= wine.name %></td>
         <td><%= wine.winery %></td>
         <td><%= wine.varietal %></td>
-        <td><%= link_to 'Show', wine %></td>
+        <td><%= link_to 'Show', wine, class: 'btn' %></td>
+        <td><%= link_to 'Edit', edit_wine_path(wine), class: 'btn' %></td>
+        <td><%= link_to 'Delete', wine, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn' %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
+<br />
+<%= link_to 'New Wine', new_wine_path, class: 'btn' %>

@@ -25,4 +25,6 @@
   <%= @wine.varietal %>
 </p>
 
-<%= link_to 'Back', wines_path %>
+<%= link_to 'Edit', edit_wine_path(@wine), class: 'btn' %> | 
+<%= link_to 'Delete', @wine, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn' %> | 
+<%= link_to 'Show All Wines', wines_path, class: 'btn' %>

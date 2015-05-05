@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
 
-  # resources :wines
-
-  get "/wines" => "wines#index", as: 'wines'
-  get "/wines/:id" => "wines#show", as: 'wine'
+  resources :wines
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
