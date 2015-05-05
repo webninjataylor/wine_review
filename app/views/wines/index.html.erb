@@ -1,5 +1,7 @@
 <h1>Listing Wines</h1>
 
+<%= page_entries_info @wines %>
+
 <table>
   <thead>
     <tr>
@@ -24,4 +26,4 @@
   </tbody>
 </table>
 <br />
-<%= link_to 'New Wine', new_wine_path, class: 'btn' %>
+<%= paginate @wines %>

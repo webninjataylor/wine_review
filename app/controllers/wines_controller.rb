@@ -4,8 +4,11 @@ class WinesController < ApplicationController
   # GET /wines
   # GET /wines.json
   def index
-    @wines = Wine.all
+    @wines = Wine.order(:name).page(params[:page])
   end
+
+
+
 
   # GET /wines/1
   # GET /wines/1.json
