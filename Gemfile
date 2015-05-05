@@ -43,3 +43,10 @@ group :development, :test do
   gem 'spring'
 end
 
+# Twitter Bootstrap
+gem 'bootstrap-sass', '~> 3.3.3'
+gem 'autoprefixer-rails'
+
+# Kaminari Pagination
+gem 'kaminari'
+gem 'kaminari-bootstrap', '~> 3.0.1'
