@@ -4,6 +4,7 @@ class Wine < ActiveRecord::Base
     'Barbera',
     'Cabernet Sauvignon',
     'Chardonnay',
+    'Chianti',
     'Gewürztraminer',
     'Grenache',
     'Malbec',
@@ -19,6 +20,7 @@ class Wine < ActiveRecord::Base
     'Sauvignon Blanc',
     'Syrah / Shiraz',
     'Tempranillo',
+    'Touriga Nacional',
     'Verdejo',
     'Viognier',
     'Zinfandel'
@@ -26,5 +28,7 @@ class Wine < ActiveRecord::Base
 
   validates :name, :year, :country, presence: true
   validates :varietal, inclusion: { in: VARIETALS, message: "%{value} is not a valid varietal" }
+
+  has_many :log_entries
 
 end
