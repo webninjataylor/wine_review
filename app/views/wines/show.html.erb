@@ -23,6 +23,8 @@
   <%= @wine.varietal %>
 </p>
 
+<p><label>Average Rating:</label> <%= format_average_stars(@wine) %></p>
+
 <%= link_to 'Edit', edit_wine_path(@wine), class: 'btn' %> | 
 <%= link_to 'Delete', @wine, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn' %> | 
 <%= link_to 'Show All Wines', wines_path, class: 'btn' %>

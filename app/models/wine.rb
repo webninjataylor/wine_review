@@ -29,6 +29,10 @@ class Wine < ActiveRecord::Base
   validates :name, :year, :country, presence: true
   validates :varietal, inclusion: { in: VARIETALS, message: "%{value} is not a valid varietal" }
 
-  has_many :log_entries
+  has_many :log_entries, dependent: :destroy
+
+  def average_stars
+    log_entries.average(:rating)
+  end
 
 end
