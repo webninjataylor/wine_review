@@ -26,3 +26,7 @@
 <%= link_to 'Edit', edit_wine_path(@wine), class: 'btn' %> | 
 <%= link_to 'Delete', @wine, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn' %> | 
 <%= link_to 'Show All Wines', wines_path, class: 'btn' %>
+<p>
+  Read all
+  <%= link_to pluralize(@wine.log_entries.size, 'review'), wine_log_entries_path(@wine) %>
+</p>
