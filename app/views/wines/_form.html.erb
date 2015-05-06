@@ -32,6 +32,6 @@
     <%= f.select :varietal, Wine::VARIETALS, { prompt: "Pick one" } %>
   </div>
   <div class="actions">
-    <%= f.submit %> | <%= link_to 'Cancel', wines_path, class: 'btn' %>
+    <%= f.submit %> | <%= link_to 'Cancel', wines_path, class: 'btn btn-primary' %>
   </div>
 <% end %>

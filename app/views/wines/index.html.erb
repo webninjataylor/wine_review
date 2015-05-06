@@ -18,9 +18,9 @@
         <td><%= wine.name %></td>
         <td><%= wine.winery %></td>
         <td><%= wine.varietal %></td>
-        <td><%= link_to 'Show', wine, class: 'btn' %></td>
-        <td><%= link_to 'Edit', edit_wine_path(wine), class: 'btn' %></td>
-        <td><%= link_to 'Delete', wine, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn' %></td>
+        <td><%= link_to 'Show', wine, class: 'btn btn-primary' %></td>
+        <td><%= link_to 'Edit', edit_wine_path(wine), class: 'btn btn-primary' %></td>
+        <td><%= link_to 'Delete', wine, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-primary' %></td>
       </tr>
     <% end %>
   </tbody>
