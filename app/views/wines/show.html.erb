@@ -30,5 +30,5 @@
 <%= link_to 'Show All Wines', wines_path, class: 'btn' %>
 <p>
   Read all
-  <%= link_to pluralize(@wine.log_entries.size, 'review'), wine_log_entries_path(@wine) %>
+  <%= link_to pluralize(@wine.log_entries.size, 'log entry'), wine_log_entries_path(@wine) %>
 </p>

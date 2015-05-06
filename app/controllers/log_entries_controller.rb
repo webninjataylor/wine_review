@@ -26,7 +26,7 @@ class LogEntriesController < ApplicationController
   end
 
   def log_entry_params
-    params.require(:log_entry).permit(:rating, :name, :comments)
+    params.require(:log_entry).permit(:name, :rating, :location, :comments, :tasted_on)
   end
 
 end
