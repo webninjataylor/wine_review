@@ -1,4 +1,5 @@
-<header>Log Entries for <%= link_to(@wine.name, @wine) %></header>
+<h2>Log Entries for <%= link_to(@wine.name, @wine) %></h2>
+
 <ol id="log_entries">
   <% @log_entries.each do |log_entry| %>
     <li>
